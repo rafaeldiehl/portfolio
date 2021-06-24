@@ -22,12 +22,17 @@ export default createGlobalStyle`
   body {
     background: ${props => props.theme.colors.primary};
     color: ${props => props.theme.colors.secundary};
+    margin-left: 5rem;
+  }
+
+  @media (max-width: 500px) {
+    body {
+      margin-left: 0;
+    }
   }
 
   #app {
     height: 100vh;
-    margin-left: 5rem;
-    
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
 
