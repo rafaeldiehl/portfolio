@@ -1,5 +1,4 @@
 import React from "react";
-
 import { Navbar } from "./Navbar";
 
 import { Container } from "../styles/components/header";
