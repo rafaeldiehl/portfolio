@@ -19,7 +19,7 @@ export function Home(props: HomeProps) {
       <section></section>
       <section></section>
       <button>
-        <Link to="test"></Link>
+        <Link to="test">Aaa</Link>
       </button>
     </div>
   );
