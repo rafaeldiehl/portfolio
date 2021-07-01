@@ -45,6 +45,6 @@ export const Container = styled.label`
   }
 
   input:checked + .slider:before {
-    transform: translateX(23px);
+    transform: translateX(24px);
   }
 `;

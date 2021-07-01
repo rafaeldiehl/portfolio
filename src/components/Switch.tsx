@@ -15,7 +15,7 @@ export function Switch(props: SwitchProps) {
     <Container>
       <input 
         type="checkbox"
-        checked={title === 'dark' ? true : false}
+        checked={title === 'light' ? true : false}
       />
       <span onClick={props.handleTheme} className="slider"></span>
     </Container>

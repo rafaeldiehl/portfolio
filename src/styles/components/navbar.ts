@@ -1,61 +1,61 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.nav`
   position: fixed;
-  left: 0;
+  top: 0;
 
-  width: 5rem;
-  height: 100vh;
+  height: 3.75rem;
+  width: 101vw;
 
-  background: #101015;
+  background: ${props => props.theme.colors.backgroundSecondary};
 
   transition: width .4s;
 
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 
-  padding: 0.25rem 0 1.5rem;
+  padding: 0.25rem 1.5rem;
+
+  border-bottom: 3px solid ${props => props.theme.colors.backgroundTertiary};
 
   img {
-    height: 3rem;
-    width: 3rem;
+    height: 2.5rem;
+    width: 2.5rem;
     margin: 1rem;
   }
 
   ul {
-    margin-top: -1rem;
     list-style: none;
 
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
 
     a {
-      color: #676769;
-      font-size: 1.75rem;
-      font-weight: 300;
+      color: ${props => props.theme.colors.textSecondary};
+      font-size: 1.15rem;
+      font-weight: 400;
 
-      width: 3rem;
-      height: 3rem;
-      border-radius: 25px;
+      margin: 1rem;
 
-      margin: 0.5rem;
+      height: 4rem;
+
+      letter-spacing: 1px;
 
       display: flex;
       justify-content: center;
       align-items: center;
+      border-bottom: 3px solid transparent;
 
       &:hover {
-        color: #ffffff;
-        background: #B12F4E;
+        border-color: #B12F4E;
       }
     }
 
     .checked {
-      color: #ffffff;
-      background: #0A0A0C;;
+      background: ${props => props.theme.colors.backgroundPrimary};
     }
 
     .item-desc {
@@ -69,51 +69,7 @@ export const Container = styled.nav`
     }
   }
 
-  @media (min-width: 500px) {
-    &:hover {
-      width: 13rem;
-
-      a {
-        width: 9rem;
-        background: #0A0A0C;
-        justify-content: space-between;
-        padding: 0 1rem;
-
-        transition: .6s;
-      }
-
-      .item-desc {
-        display: block;
-      }
-    }
-  }
  
   @media (max-width: 500px) {
-    width: 100vw;
-    height: 5rem;
-
-    bottom: 0;
-    padding: 0;
-
-    flex-direction: row;
-
-    img {
-      display: none;
-    }
-
-    ul {
-      flex-direction: row;
-
-      width: 100%;
-      height: 5rem;
-
-      margin-top: 0;
-
-      justify-content: space-around;
-    }
-
-    label {
-      display: none;
-    }
   }
 `;

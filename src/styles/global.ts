@@ -5,6 +5,7 @@ export default createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    cursor: none;
   }
 
   body, input, textarea, button {
@@ -20,9 +21,12 @@ export default createGlobalStyle`
   }
 
   body {
-    background: ${props => props.theme.colors.primary};
-    color: ${props => props.theme.colors.secundary};
-    margin-left: 5rem;
+    display: block;
+    background: ${props => props.theme.colors.backgroundPrimary};
+    color: ${props => props.theme.colors.textPrimary};
+    transition: background .5s;
+    margin-top: 3.75rem;
+    overflow: hidden;
   }
 
   @media (max-width: 500px) {
@@ -31,7 +35,7 @@ export default createGlobalStyle`
     }
   }
 
-  #app {
+  #home {
     height: 100vh;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;

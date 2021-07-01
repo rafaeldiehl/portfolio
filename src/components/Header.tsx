@@ -1,7 +1,9 @@
-import React from "react";
-import { Navbar } from "./Navbar";
+import React, { useEffect } from 'react';
 
-import { Container } from "../styles/components/header";
+import { Navbar } from './Navbar';
+import { Button } from './Button';
+
+import { Container } from '../styles/components/header';
 
 interface HeaderProps {
   handleTheme: () => void;
@@ -12,8 +14,26 @@ export function Header(props: HeaderProps) {
     <Container>
       <Navbar handleTheme={props.handleTheme} />
       <div>
-        <h1>Olá, mundo!</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto nihil alias quas repudiandae blanditiis. Quibusdam placeat rerum soluta vitae officiis!</p>
+        <h1 
+          onMouseEnter={() => {
+            const cursor = document.querySelector('#cursor');
+            cursor?.classList.add('hovered');
+          }}
+          onMouseLeave={() => {
+            const cursor = document.querySelector('#cursor');
+            cursor?.classList.remove('hovered');
+          }}
+        >
+          Olá, mundo! <br />
+          Meu nome é <br />
+          <strong>Rafael Diehl</strong>.
+        </h1>
+        <p>Um entusiasta de desenvolvimento web focado em JavaScript.</p>
+        <a href={process.env.PUBLIC_URL + 'cv.pdf'} target="_blank">
+          <Button type="button">
+            Baixe meu CV
+          </Button>
+        </a>
       </div>
     </Container>
   );
