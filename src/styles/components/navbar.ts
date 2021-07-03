@@ -3,11 +3,10 @@ import styled from 'styled-components';
 export const Container = styled.nav`
   position: fixed;
   top: 0;
+  left: -2px;
 
   height: 3.75rem;
-  width: 101vw;
-
-  background: ${props => props.theme.colors.backgroundSecondary};
+  width: calc(100vw - 1rem);
 
   transition: width .4s;
 
@@ -16,14 +15,44 @@ export const Container = styled.nav`
   justify-content: space-between;
   align-items: center;
 
-  padding: 0.25rem 1.5rem;
+  z-index: 100;
 
-  border-bottom: 3px solid ${props => props.theme.colors.backgroundTertiary};
+  padding: 0.25rem 2rem;
+
+  background: ${props => props.theme.colors.backgroundPrimary};
 
   img {
     height: 2.5rem;
     width: 2.5rem;
     margin: 1rem;
+    transition: .3s;
+    cursor: pointer;
+
+    &:hover {
+      filter: brightness(1.3);
+    }
+  }
+
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    label {
+      margin-left: 3rem;
+      position: relative;
+    
+      &::before {
+        content: '';
+        position: absolute;
+        height: 25px;
+        width: 2px;
+        left: -62.5%;
+        top: 50%;
+        transform: translate(62.5%, -50%);
+        background: ${props => props.theme.colors.backgroundTertiary};
+      }
+    }
   }
 
   ul {
@@ -40,18 +69,12 @@ export const Container = styled.nav`
 
       margin: 1rem;
 
-      height: 4rem;
 
       letter-spacing: 1px;
 
       display: flex;
       justify-content: center;
       align-items: center;
-      border-bottom: 3px solid transparent;
-
-      &:hover {
-        border-color: #B12F4E;
-      }
     }
 
     .checked {
@@ -69,7 +92,158 @@ export const Container = styled.nav`
     }
   }
 
+  .dropdown-container {
+    position: relative;
+
+    > a svg {
+      margin-left: 0.1rem;
+    }
+
+    .dropdown {
+      background: ${props => props.theme.colors.backgroundPrimary}dd;
+      position: absolute;
+      left: 0px;
+      width: 100%;
+
+      display: flex;
+      flex-direction: column;
+
+      border-radius: 0 0 5px 5px;
+
+      visibility: hidden;
+
+      li {
+        a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          font-size: 1rem;
+          margin: 0.5rem;
+
+          svg {
+            font-size: 1.2rem;
+          }
+
+          &:hover {
+            color: var(--red);
+          }
+
+          svg {
+            margin-right: 0.5rem;
+          }
+        }
+      }
+    }
+
+    &:hover {
+      .dropdown {
+        visibility: visible;
+      }
+    }
+  }
+
+  .hamburger {
+    font-size: 2rem;
+    margin: 1rem;
+    display: none;
+    cursor: pointer;
+  }
  
-  @media (max-width: 500px) {
+  @media (max-width: 600px) {
+    padding: 0 1rem;
+
+    ul {
+      display: none;
+    }
+
+    .flex-container {
+      flex-direction: row-reverse;
+
+      label {
+        display: none;
+      }
+    }
+
+    .flex-container.active {
+      ul {
+        background: ${props => props.theme.colors.backgroundPrimary};
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        z-index: 50;
+        width: calc(100vw - 0.9rem);
+        margin-top: 3.75rem;
+        padding-top: 2rem;
+
+        li {
+          a {
+            font-size: 1.3rem;
+            margin-left: 2rem;
+          }
+        }
+      }
+
+      .dropdown-container {
+        > a svg {
+          display: none;
+        }
+
+        .dropdown {
+          background: ${props => props.theme.colors.backgroundPrimary};
+          width: 100%;
+
+          display: flex;
+          flex-direction: column;
+
+          margin-top: 2.5rem;
+          padding: 0;
+          padding-bottom: 1rem;
+
+          visibility: visible;
+
+          border-radius: 0;
+          border-bottom: 1px solid ${props => props.theme.colors.backgroundTertiary};
+
+          li {
+            a {
+              font-size: 1.15rem;
+              margin: 0.5rem;
+              margin-left: 1rem;
+
+              svg {
+                font-size: 1.3rem;
+              }
+
+              &:hover {
+                color: var(--red);
+              }
+
+              svg {
+                margin-right: 0.5rem;
+              }
+            }
+          }
+        }
+      }
+
+      label {
+        display: block;
+        position: absolute;
+        top: 4.5rem;
+        z-index: 100;
+        left: 40%;
+        transform: translateX(-40%);
+
+        &::before {
+          display: none;
+        }
+      }
+    }
+
+    .hamburger {
+      display: block;
+    }
   }
 `;

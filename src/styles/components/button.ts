@@ -41,12 +41,12 @@ export const Container = styled.button`
 
   span {
     position: absolute;
-    border: 1px solid ${props => props.theme.colors.textPrimary};
+    border: 2px solid ${props => props.theme.colors.textPrimary};
     width: 100%;
     height: 100%;
-    top: -5px;
-    left: -5px;
-    padding: 4px;
+    top: -7px;
+    left: -7px;
+    padding: 5px;
     box-sizing: initial;
     border-radius: 10px;
     transition: .4s;

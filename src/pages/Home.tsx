@@ -1,23 +1,35 @@
-import React, { useEffect } from 'react';
+import { useState, useEffect } from 'react';
+
 import GlobalStyle from '../styles/global';
 
-import { Link } from 'react-router-dom';
+import { useWindowDimensions } from '../hooks/useWindowDimensions';
 
 import { About } from '../components/About';
 import { Header } from '../components/Header';
 import { Cursor } from '../components/Cursor';
+import { Footer } from '../components/Footer';
+
+import { Container } from '../styles/pages/home';
 
 interface HomeProps {
   handleTheme: () => void;
 }
 
 export function Home(props: HomeProps) {
+  const { width } = useWindowDimensions();
+  const [cursor, setCursor] = useState<Boolean>(false);
+
+  useEffect(() => {
+    width > 600 ? setCursor(true) : setCursor(false)
+  }, [width]);
+
   return (
-    <div id="home">
+    <Container id="home" className={cursor && 'cursorOn'}>
       <GlobalStyle />
-      <Cursor />
+      {cursor && <Cursor />}
       <Header handleTheme={props.handleTheme} />
-      <About id="about" />
-    </div>
+      <About />
+      <Footer />
+    </Container>
   );
 }

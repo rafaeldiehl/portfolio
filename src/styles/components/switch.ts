@@ -19,7 +19,7 @@ export const Container = styled.label`
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #0a0a0c;
+    background-color: #171719;
     transition: .4s;
     border-radius: 34px;
 
@@ -37,14 +37,10 @@ export const Container = styled.label`
   }
 
   input:checked + .slider {
-    background-color: #B12F4E;
-  }
-
-  input:focus + .slider {
-    box-shadow: 0 0 1px #B12F4E;
+    background-color: var(--red);
   }
 
   input:checked + .slider:before {
-    transform: translateX(24px);
+    transform: translateX(23px);
   }
 `;

@@ -34,10 +34,12 @@ export const Container = styled.div`
   }
 
   .link {
+
     .ring {
-      width: 2.5rem;
-      height: 2.5rem;
+      width: 3rem;
+      height: 3rem;
       border-width: 3px;
+      border-color: var(--red);
     }
 
     .dot {
@@ -51,7 +53,7 @@ export const Container = styled.div`
       height: 5.5rem;
       border-width: 3px;
       border-color: lightgray;
-      background: #fff;
+      background: #ffffff;
       mix-blend-mode: difference;
       opacity: 1;
     }

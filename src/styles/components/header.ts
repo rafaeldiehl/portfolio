@@ -16,7 +16,8 @@ const flow = keyframes`
 
 export const Container = styled.header`
   text-align: center;
-  height: calc(100vh - 3.75rem);
+  height: 100vh;
+  padding-top: 3.75rem;
 
   display: flex;
   flex-direction: column;
@@ -33,6 +34,7 @@ export const Container = styled.header`
   h1 {
     font-size: 5rem;
     line-height: 5rem;
+    user-select: none;
   }
 
   p {

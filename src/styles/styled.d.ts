@@ -11,6 +11,7 @@ declare module 'styled-components' {
 
       textPrimary: string;
       textSecondary: string;
+      scrollBar: string;
     }
   }
 }

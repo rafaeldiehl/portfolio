@@ -6,7 +6,8 @@ export default {
     backgroundSecondary: '#1A1A1C',
     backgroundTertiary: '#2A2A2C',
 
-    textPrimary: '#fff',
-    textSecondary: '#eee'
+    textPrimary: '#ffffff',
+    textSecondary: '#eeeeee',
+    scrollBar: '#6C6C6E',
   },
 };

@@ -2,11 +2,12 @@ export default {
   title: 'light',
 
   colors: {
-    backgroundPrimary: '#fff',
-    backgroundSecondary: '#eee',
-    backgroundTertiary: '#ccc',
+    backgroundPrimary: '#ffffff',
+    backgroundSecondary: '#eeeeee',
+    backgroundTertiary: '#cccccc',
 
-    textPrimary: '#000',
-    textSecondary: '#111'
+    textPrimary: '#000000',
+    textSecondary: '#111111',
+    scrollBar: '#7E8182',
   },
 };
