@@ -35,4 +35,8 @@ export const Container = styled.aside`
       }
     }
   }
+
+  @media(max-width: 600px) {
+    display: none;
+  }
 `;

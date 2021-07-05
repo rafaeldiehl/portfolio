@@ -14,7 +14,7 @@ const arrow = keyframes`
 
 export const Container = styled.aside`
   position: absolute;
-  bottom: 4rem;
+  bottom: 6rem;
   left: 0;
   writing-mode: vertical-lr;
   text-orientation: mixed;

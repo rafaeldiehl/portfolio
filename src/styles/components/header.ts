@@ -30,9 +30,9 @@ export const Container = styled.header`
     justify-content: center;
     align-items: center;
     position: relative;
-    width: 90vw;
     height: 100%;
-    max-width: 1200px;
+    width: 90vw;
+    max-width: 1400px;
   }
 
   h1 {

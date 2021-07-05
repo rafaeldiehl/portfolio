@@ -16,14 +16,14 @@ export const Container = styled.nav`
 
   z-index: 100;
 
-  padding: 0.25rem 2rem;
+  padding: 0.25rem 2.5rem;
 
   background: ${props => props.theme.colors.backgroundPrimary};
 
   img {
     height: 2.5rem;
     width: 2.5rem;
-    margin: 1rem;
+    margin: 1rem 1rem 1rem 0;
     transition: 1.5s;
     cursor: pointer;
 

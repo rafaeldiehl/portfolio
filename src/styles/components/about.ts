@@ -8,7 +8,8 @@ export const Container = styled.section`
   justify-content: center;
 
   .flex-container {
-    max-width: 1200px;
     height: 100%;
+    width: 90vw;
+    max-width: 1400px;
   }
 `;
