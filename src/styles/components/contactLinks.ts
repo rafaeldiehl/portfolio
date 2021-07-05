@@ -22,7 +22,7 @@ export const Container = styled.aside`
     list-style: none;
 
     li {
-      margin: 0.75rem;
+      margin: 0.75rem 0;
 
       a {
         font-size: 1.5rem;

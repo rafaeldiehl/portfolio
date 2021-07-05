@@ -155,6 +155,10 @@ export const Container = styled.nav`
     left: 0;
     width: 100vw;
 
+    img {
+      margin-left: 0.75rem;
+    }
+
     ul {
       display: none;
     }
@@ -182,7 +186,6 @@ export const Container = styled.nav`
         li {
           a {
             font-size: 1.3rem;
-            margin-left: 2rem;
           }
         }
       }
@@ -197,7 +200,6 @@ export const Container = styled.nav`
           width: 100%;
 
           display: flex;
-          flex-direction: column;
 
           margin-top: 2.5rem;
           padding: 0;
@@ -208,14 +210,26 @@ export const Container = styled.nav`
           border-radius: 0;
           border-bottom: 1px solid ${props => props.theme.colors.backgroundTertiary};
 
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+
           li {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
             a {
-              font-size: 1.15rem;
-              margin: 0.5rem;
-              margin-left: 1rem;
+              margin: 0.25rem;
+
+              span {
+                display: none;
+              }
 
               svg {
-                font-size: 1.3rem;
+                font-size: 1.75rem;
               }
 
               &:hover {
@@ -233,10 +247,12 @@ export const Container = styled.nav`
       label {
         display: block;
         position: absolute;
-        top: 4.5rem;
+        margin: 0;
+        padding: 0;
         z-index: 100;
-        left: 40%;
-        transform: translateX(-40%);
+        left: calc(50% - 1.2rem);
+        top: 4.2rem;
+        transform: translateX(calc(-50% + 0.9rem));
 
         &::before {
           display: none;

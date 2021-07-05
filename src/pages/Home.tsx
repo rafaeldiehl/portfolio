@@ -25,6 +25,7 @@ export function Home(props: HomeProps) {
 
   return (
     <Container id="home" className={cursor && 'cursorOn'}>
+      <div className="block-bg" />
       <GlobalStyle />
       {cursor && <Cursor />}
       <Header handleTheme={props.handleTheme} />

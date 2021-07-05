@@ -2,10 +2,6 @@ import { useState } from 'react';
 
 import logoIMG from '../assets/images/logo.png';
 
-import { 
-  HiMenuAlt2
-} from 'react-icons/hi';
-
 import {
   AiFillGithub,
   AiFillLinkedin
@@ -21,6 +17,7 @@ import {
 import { Container } from '../styles/components/navbar';
 
 import { Switch } from './Switch';
+import { Menu } from './Menu';
 import { Anchor } from './Anchor';
 
 interface NavbarProps {
@@ -40,6 +37,8 @@ export function Navbar(props: NavbarProps) {
   }
 
   function handleShowMenu() {
+    const block = document.querySelector('.block-bg');
+    block?.classList.toggle('active');
     showMenu ? setShowMenu(false) : setShowMenu(true);
   }
 
@@ -50,7 +49,7 @@ export function Navbar(props: NavbarProps) {
         alt="Rafael Diehl" 
         title="Rafael Diehl" 
       />
-      <div className={`flex-container ${showMenu && 'active'}`}>
+      <div className={`flex-container ${showMenu ? 'active' : ''}`}>
         <ul className="main-items">
           <li>
             <Anchor href="#about">
@@ -84,7 +83,7 @@ export function Navbar(props: NavbarProps) {
               <li>
                 <Anchor href="mailto:rafaeljuliani1984@gmail.com">
                   <FiMail />
-                  E-mail
+                  <span>E-mail</span>
                 </Anchor>
               </li>
               <li>
@@ -93,7 +92,7 @@ export function Navbar(props: NavbarProps) {
                   target="_blank"
                 >
                   <AiFillGithub />
-                  Github
+                  <span>Github</span>
                 </Anchor>
               </li>
               <li>
@@ -102,14 +101,14 @@ export function Navbar(props: NavbarProps) {
                   target="_blank"
                 >
                   <AiFillLinkedin />
-                  Linkedin
+                  <span>Linkedin</span>
                 </Anchor>
               </li>
             </ul>
           </li>
         </ul>
-        <HiMenuAlt2
-          className="hamburger" 
+        <Menu
+          className={`hamburger ${showMenu ? 'open' : ''}`}
           onClick={handleShowMenu}
         />
         <Switch handleTheme={props.handleTheme} />
