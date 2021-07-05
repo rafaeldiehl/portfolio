@@ -54,9 +54,9 @@ export default createGlobalStyle`
   }
 
   // breakpoints
-  @media(max-width: 1000px) {
+  @media(max-width: 1500px) {
     html {
-      font-size: 100%;
+      font-size: 95%;
     }
   }
 
@@ -72,9 +72,15 @@ export default createGlobalStyle`
     }
   }
 
-  @media(max-height: 675px) {
+  @media(max-height: 575px) {
     html {
-      font-size: 92.5%;
+      font-size: 82.5%;
+    }
+  }
+
+  @media(max-height: 450px) {
+    html {
+      font-size: 65%;
     }
   }
 `;

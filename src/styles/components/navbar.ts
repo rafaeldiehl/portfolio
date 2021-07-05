@@ -3,10 +3,9 @@ import styled from 'styled-components';
 export const Container = styled.nav`
   position: fixed;
   top: 0;
-  left: -2px;
 
   height: 3.75rem;
-  width: calc(100vw - 1rem);
+  width: calc(100vw - 0.75rem);
 
   transition: width .4s;
 
@@ -25,11 +24,11 @@ export const Container = styled.nav`
     height: 2.5rem;
     width: 2.5rem;
     margin: 1rem;
-    transition: .3s;
+    transition: 1.5s;
     cursor: pointer;
 
     &:hover {
-      filter: brightness(1.3);
+      transform: rotate(360deg);
     }
   }
 
@@ -75,6 +74,7 @@ export const Container = styled.nav`
       display: flex;
       justify-content: center;
       align-items: center;
+      transition: .2s;
     }
 
     .checked {
@@ -152,6 +152,8 @@ export const Container = styled.nav`
  
   @media (max-width: 600px) {
     padding: 0 1rem;
+    left: 0;
+    width: 100vw;
 
     ul {
       display: none;

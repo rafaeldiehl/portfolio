@@ -29,6 +29,10 @@ export const Container = styled.header`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+    width: 90vw;
+    height: 100%;
+    max-width: 1200px;
   }
 
   h1 {

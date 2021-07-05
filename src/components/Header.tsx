@@ -1,5 +1,7 @@
 import { Navbar } from './Navbar';
 import { Button } from './Button';
+import { ScrollWarning } from './ScrollWarning';
+import { ContactLinks } from './ContactLinks';
 
 import { Container } from '../styles/components/header';
 
@@ -11,7 +13,9 @@ export function Header(props: HeaderProps) {
   return (
     <Container>
       <Navbar handleTheme={props.handleTheme} />
-      <div>
+      <div className="flex-container">
+        <ScrollWarning />
+        <ContactLinks />
         <h1 
           onMouseEnter={() => {
             const cursor = document.querySelector('#cursor');
