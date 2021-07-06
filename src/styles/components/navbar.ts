@@ -62,7 +62,7 @@ export const Container = styled.nav`
     align-items: center;
 
     a {
-      color: ${props => props.theme.colors.textSecondary};
+      color: ${props => props.theme.colors.textPrimary};
       font-size: 1.15rem;
       font-weight: 400;
 
@@ -153,7 +153,6 @@ export const Container = styled.nav`
   @media (max-width: 600px) {
     padding: 0 1rem;
     left: 0;
-    width: 100vw;
 
     img {
       margin-left: 0.75rem;
@@ -179,13 +178,17 @@ export const Container = styled.nav`
         left: 0;
         display: block;
         z-index: 50;
-        width: calc(100vw - 0.9rem);
+        width: calc(100vw - 0.75rem);
         margin-top: 3.75rem;
         padding-top: 2rem;
 
         li {
           a {
             font-size: 1.3rem;
+
+            &:hover {
+              color: var(--red);
+            }
           }
         }
       }
@@ -197,7 +200,7 @@ export const Container = styled.nav`
 
         .dropdown {
           background: ${props => props.theme.colors.backgroundPrimary};
-          width: 100%;
+          width: calc(100vw - 0.75rem);
 
           display: flex;
 
@@ -250,9 +253,9 @@ export const Container = styled.nav`
         margin: 0;
         padding: 0;
         z-index: 100;
-        left: calc(50% - 1.2rem);
+        left: 50%;
         top: 4.2rem;
-        transform: translateX(calc(-50% + 0.9rem));
+        transform: translateX(-50%);
 
         &::before {
           display: none;

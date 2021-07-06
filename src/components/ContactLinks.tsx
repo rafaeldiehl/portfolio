@@ -13,17 +13,17 @@ export function ContactLinks() {
     <Container>
       <ul>
         <li>
-          <Anchor href="" target="_blank">
+          <Anchor href="mailto:rafaeljuliani1984@gmail.com" target="_blank">
             <FiMail />
           </Anchor>
         </li>
         <li>
-          <Anchor href="" target="_blank">
+          <Anchor href="https://github.com/rafaeldiehl" target="_blank">
             <FiGithub />
           </Anchor>
         </li>
         <li>
-          <Anchor href="" target="_blank">
+          <Anchor href="https://www.linkedin.com/in/rafael-juliani-diehl-94317a198/" target="_blank">
             <FiLinkedin />
           </Anchor>
         </li>

@@ -3,6 +3,7 @@ import { createGlobalStyle } from 'styled-components';
 export default createGlobalStyle`
   html {
     --red: #e6384d;
+    --yellow: #F8d94f;
 
     scroll-behavior: smooth;
   }

@@ -34,7 +34,6 @@ export const Container = styled.div`
   }
 
   .link {
-
     .ring {
       width: 3rem;
       height: 3rem;

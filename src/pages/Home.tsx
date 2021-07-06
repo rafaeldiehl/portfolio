@@ -8,6 +8,7 @@ import { About } from '../components/About';
 import { Cursor } from '../components/Cursor';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
+import { Skills } from '../components/Skills';
 
 import { Container } from '../styles/pages/home';
 
@@ -30,6 +31,7 @@ export function Home(props: HomeProps) {
       {cursor && <Cursor />}
       <Header handleTheme={props.handleTheme} />
       <About />
+      <Skills />
       <Footer />
     </Container>
   );

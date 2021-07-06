@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import { ThemeProvider, DefaultTheme } from 'styled-components';
-import { usePersistedState } from './utils/usePersistedState';
+import { usePersistedState } from './hooks/usePersistedState';
 
 import { Home } from './pages/Home';
 import { Test } from './pages/Test';

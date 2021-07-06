@@ -2,12 +2,11 @@ import { useState } from 'react';
 
 import logoIMG from '../assets/images/logo.png';
 
-import {
-  AiFillGithub,
-  AiFillLinkedin
-} from 'react-icons/ai';
-
-import { FiMail } from 'react-icons/fi';
+import { 
+  FiMail,
+  FiGithub,
+  FiLinkedin
+} from 'react-icons/fi';
 
 import { 
   MdKeyboardArrowDown,
@@ -57,12 +56,12 @@ export function Navbar(props: NavbarProps) {
             </Anchor>
           </li>
           <li>
-            <Anchor href="#">
+            <Anchor href="#skills">
               Skills
             </Anchor>
           </li>
           <li>
-            <Anchor href="#">
+            <Anchor href="#projects">
               Projetos
             </Anchor>
           </li>
@@ -71,7 +70,7 @@ export function Navbar(props: NavbarProps) {
             onMouseLeave={setIsDropdownFalse}
             className="dropdown-container"
           >
-            <Anchor href="#">
+            <Anchor href="#contact">
               Contato
               {isDropdown ? (
                 <MdKeyboardArrowUp />
@@ -91,7 +90,7 @@ export function Navbar(props: NavbarProps) {
                   href="https://github.com/rafaeldiehl"
                   target="_blank"
                 >
-                  <AiFillGithub />
+                  <FiGithub />
                   <span>Github</span>
                 </Anchor>
               </li>
@@ -100,7 +99,7 @@ export function Navbar(props: NavbarProps) {
                   href="https://www.linkedin.com/in/rafael-juliani-diehl-94317a198/"
                   target="_blank"
                 >
-                  <AiFillLinkedin />
+                  <FiLinkedin />
                   <span>Linkedin</span>
                 </Anchor>
               </li>
