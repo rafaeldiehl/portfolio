@@ -21,7 +21,7 @@ export function Skills() {
     <Container id="skills">
       <div className="flex-container">
           <section className="descriptive">
-            <span>SKILLS</span>
+            <span>Skills</span>
             <h2>Minhas habilidades.</h2>
             <p>A seguir, uma lista com as linguagens, ferramentas e outras tecnologias que eu já tive contato.
             </p>

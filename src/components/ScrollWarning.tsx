@@ -1,5 +1,3 @@
-import { HiOutlineArrowNarrowRight } from 'react-icons/hi';
-
 import { Container } from '../styles/components/scrollWarning';
 
 export function ScrollWarning() {

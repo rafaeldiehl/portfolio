@@ -4,7 +4,7 @@ import { RiCopyleftLine } from 'react-icons/ri';
 
 export function Footer() {
   return (
-    <Container id="footer">
+    <Container>
       Copyleft <RiCopyleftLine /> Rafael Diehl.
       <a href="https://github.com/rafaeldiehl" target="_blank">Acesse o repositório</a> com o código fonte. <br />
       Software livre licenciado pela  

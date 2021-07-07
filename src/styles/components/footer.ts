@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Container = styled.section`
+export const Container = styled.footer`
   background: ${props => props.theme.colors.backgroundSecondary};
   padding: 1rem;
   text-align: center;
