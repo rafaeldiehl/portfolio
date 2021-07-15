@@ -20,11 +20,32 @@ export function About() {
             surgiu com o desenvolvimento web. Desde então, tenho me dedicado aos estudos de forma autodidata.
           </p>
         </section>
-        <section className="location">
+        <section className="trajectory">
           <h3>Trajetória acadêmica</h3>
-          {/*
-            Lista de nós
-          */}
+          <div className="node">
+            <span className="circle first-circle"></span>
+            <div className="course">
+              <span className="time">2018 a 2020</span>
+              <h3>Técnico em Redes de Computadores</h3>
+              <p>IFSP Campus Boituva</p>
+            </div>
+          </div>
+          <div className="node">
+            <span className="circle"></span>
+            <div className="course">
+              <span className="time">2020 a 2020</span>
+              <h3>FIC em Programador Web</h3>
+              <p>IFSuldeMinas EAD</p>
+            </div>
+          </div>
+          <div className="node">
+            <span className="circle active-circle"></span>
+            <div className="course">
+              <span className="time">2021 até o presente</span>
+              <h3>Tecnólogo em Análise e Desenvolvimento de Sistemas</h3>
+              <p>IFSP Campus Boituva</p>
+            </div>
+          </div>
         </section>
       </div>
     </Container>

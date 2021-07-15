@@ -24,7 +24,7 @@ export const Container = styled.header`
   justify-content: center;
   align-items: center;
 
-  > div {
+  main {
     display: flex;
     flex-direction: column;
     justify-content: center;

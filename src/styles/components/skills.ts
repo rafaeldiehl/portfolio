@@ -48,4 +48,8 @@ export const Container = styled.section`
     flex-wrap: wrap;
     justify-content: center;
   }
+
+  @media(max-width: 885px) {
+    height: auto;
+  }
 `;

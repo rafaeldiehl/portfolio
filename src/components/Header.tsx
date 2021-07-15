@@ -13,7 +13,7 @@ export function Header(props: HeaderProps) {
   return (
     <Container>
       <Navbar handleTheme={props.handleTheme} />
-      <div className="flex-container">
+      <main className="flex-container">
         <ScrollWarning />
         <ContactLinks />
         <h1 
@@ -36,7 +36,7 @@ export function Header(props: HeaderProps) {
             Baixe meu CV
           </Button>
         </a>
-      </div>
+      </main>
     </Container>
   );
 }
