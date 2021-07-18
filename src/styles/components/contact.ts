@@ -71,20 +71,88 @@ export const Container = styled.section`
 
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
 
-  .description {
-    width: 30%;
+  > div {
+    width: 47.5%;
+  }
+  
+  .descriptive {
+    padding-right: 2rem;
+
+    span {
+      color: ${props => props.theme.colors.textSecondary};
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    h2 {
+      font-size: 3rem;
+      margin-bottom: 0.75rem;
+      margin-top: 0.5rem;
+    }
+
+    p {
+      line-height: 1.75rem;
+      font-size: 1.15rem;
+    }
   }
 
   .contact-container {
-    width: 70%;
-    max-width: 425px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+  }
+
+  .contact-badges {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+
+    a {
+      width: 100%;
+      max-width: 150px;
+    }
+
+    .badge {
+      padding: 1rem;
+      margin: 0.25rem;
+      
+      border: 2px solid ${props => props.theme.colors.textSecondary};
+      border-radius: 6px;
+      color: ${props => props.theme.colors.textSecondary};
+      font-size: 1.2rem;
+
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+
+      opacity: 0.8;
+
+      transition: border-radius .5s;
+
+      svg {
+        font-size: 1.4rem;
+        margin-right: 1rem;
+      }
+
+      &:hover {
+        opacity: 1;
+        animation: ${changeBorderColor} infinite 2s, ${changeColor} infinite 2s;
+        border-radius: 0;
+      }
+    }
   }
 
   form {
+    width: 100%;
+    max-width: 425px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -188,11 +256,60 @@ export const Container = styled.section`
 
         &:hover {
           border-radius: 0;
-          filter: brightness(130%);
 
           svg {
             font-size: 1.3rem;
             animation: ${shake} infinite linear 0.3s;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1050px) {
+    .contact-badges {
+      flex-wrap: wrap;
+    }
+  }
+
+  @media (max-width: 885px) {
+    flex-direction: column;
+    margin: 2rem;
+
+    > div {
+      width: 100%;
+    }
+
+    .contact-badges {
+      .badge {
+        padding: 0.75rem 0;
+        font-size: 1rem;
+        margin: 0.5rem;
+      }
+    }
+
+    .descriptive {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    form {
+      margin-top: 2rem;
+    }
+  }
+
+  @media (max-width: 435px) {
+    form {
+      .buttons-container {
+        button {
+          .button-content {
+            justify-content: center;
+            padding: 0;
+          }
+
+          svg {
+            display: none;
           }
         }
       }

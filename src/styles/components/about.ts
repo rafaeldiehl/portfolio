@@ -15,7 +15,7 @@ const flow = keyframes`
 `;
 
 export const Container = styled.section`
-
+  height: 100vh;
   padding-top: 3.75rem;
 
   display: flex;
@@ -32,7 +32,7 @@ export const Container = styled.section`
     justify-content: center;
 
     > section {
-      width: 50%;
+      width: 47.5%;
     }
   }
 
@@ -134,6 +134,11 @@ export const Container = styled.section`
 
   @media(max-width: 885px) {
     height: auto;
+    margin-bottom: 2rem;
+
+    .descriptive {
+      text-align: center;
+    }
 
     .flex-container {
       flex-direction: column;
@@ -144,6 +149,7 @@ export const Container = styled.section`
     }
 
     .trajectory {
+
       > h3 {
         margin-top: 3rem;
       }

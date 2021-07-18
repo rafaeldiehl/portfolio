@@ -51,5 +51,6 @@ export const Container = styled.section`
 
   @media(max-width: 885px) {
     height: auto;
+    margin-bottom: 5rem;
   }
 `;

@@ -1,4 +1,12 @@
+import { Anchor } from './Anchor';
+
 import { FaTrashAlt, FaArrowRight } from 'react-icons/fa';
+
+import { 
+  FiMail,
+  FiGithub,
+  FiLinkedin
+} from 'react-icons/fi';
 
 import { Container } from '../styles/components/contact';
 
@@ -18,9 +26,33 @@ export function Contact() {
   }
 
   return (
-    <Container>
-      <div className="description">
-        <h1>Contato</h1>
+    <Container id="contact">
+      <div className="descriptive">
+        <span>Contato</span>
+        <h2>Envie sua mensagem</h2>
+        <p>Preencha o formulário a seguir adequadamente e envie-me um e-mail com seus dados
+         e mensagem. Responderei assim que possível. Além disso, você pode entrar em contato
+         comigo pelos seguintes meios.</p>
+        <div className="contact-badges">
+          <Anchor href="mailto:rafaeljuliani1984@gmail.com" target="_blank">
+            <div className="badge">
+              <FiMail />
+              E-mail
+            </div>
+          </Anchor>
+          <Anchor href="https://github.com/rafaeldiehl" target="_blank">
+            <div className="badge">
+              <FiGithub />
+              Github
+            </div>
+          </Anchor>
+          <Anchor href="https://www.linkedin.com/in/rafael-juliani-diehl-94317a198/" target="_blank">
+            <div className="badge">
+              <FiLinkedin />
+              Linkedin
+            </div>
+          </Anchor>
+        </div>
       </div>
       <div className="contact-container">
         <form onSubmit={sendEmail}>
