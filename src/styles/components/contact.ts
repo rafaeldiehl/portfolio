@@ -152,7 +152,7 @@ export const Container = styled.section`
 
   form {
     width: 100%;
-    max-width: 425px;
+    max-width: 455px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -205,6 +205,7 @@ export const Container = styled.section`
 
       textarea {
         max-width: 100%;
+        min-width: 100%;
         height: 180px;
         max-height: 300px;
         min-height: 40px;

@@ -64,5 +64,5 @@ export const skills = [
     title: 'MySQL',
     component: <GrMysql />,
     color: '#1C87E5'
-  }
+  },
 ];

@@ -32,7 +32,7 @@ export function Contact() {
         <h2>Envie sua mensagem</h2>
         <p>Preencha o formulário a seguir adequadamente e envie-me um e-mail com seus dados
          e mensagem. Responderei assim que possível. Além disso, você pode entrar em contato
-         comigo pelos seguintes meios.</p>
+         comigo pelos seguintes meios:</p>
         <div className="contact-badges">
           <Anchor href="mailto:rafaeljuliani1984@gmail.com" target="_blank">
             <div className="badge">
