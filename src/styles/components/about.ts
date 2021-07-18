@@ -154,7 +154,31 @@ export const Container = styled.section`
 
       .course {
         h3 {
-          width: 100%;
+          width: auto;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 428px) {
+    .node {
+      .circle {
+        &.first-circle {
+          &::after {
+            height: 12.1rem;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 328px) {
+    .node {
+      .circle {
+        &.first-circle {
+          &::after {
+            height: 13.4rem;
+          }
         }
       }
     }

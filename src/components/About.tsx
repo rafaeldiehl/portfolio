@@ -42,7 +42,7 @@ export function About() {
             <span className="circle active-circle"></span>
             <div className="course">
               <span className="time">2021 até o presente</span>
-              <h3>Tecnólogo em Análise e Desenvolvimento de Sistemas</h3>
+              <h3>Tecnólogo em ADS</h3>
               <p>IFSP Campus Boituva</p>
             </div>
           </div>
