@@ -9,6 +9,7 @@ import { Contact } from '../components/Contact';
 import { Cursor } from '../components/Cursor';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
+import { Projects } from '../components/Projects';
 import { Skills } from '../components/Skills';
 
 import { Container } from '../styles/pages/home';
@@ -33,6 +34,7 @@ export function Home(props: HomeProps) {
       <Header handleTheme={props.handleTheme} />
       <About />
       <Skills />
+      <Projects />
       <Contact />
       <Footer />
     </Container>

@@ -130,6 +130,13 @@ export const Container = styled.section`
   }
 
   @media (max-width: 780px) {
+    .descriptive {
+      p {
+        &:last-child {
+          margin-top: 1rem;
+        }
+      }
+    }
     .skill-list {
       .arrow {
         margin: 0;

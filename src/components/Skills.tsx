@@ -23,8 +23,10 @@ export function Skills() {
           <section className="descriptive">
             <span>Skills</span>
             <h2>Minhas habilidades.</h2>
-            <p>A seguir está uma lista com as linguagens, ferramentas e outras tecnologias com que mais tive contato. <br />
-              A lista não está de acordo com o nível de proficiência em cada uma delas.
+            <p>A seguir está uma lista com as linguagens, ferramentas e outras tecnologias com que mais tive contato.
+            </p>
+            <p>
+              A ordem da lista não está de acordo com o nível de proficiência nas linguagens.
             </p>
           </section>
           <section className="skill-list">
