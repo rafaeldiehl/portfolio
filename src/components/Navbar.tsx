@@ -51,7 +51,7 @@ export function Navbar(props: NavbarProps) {
       <div className={`flex-container ${showMenu ? 'active' : ''}`}>
         <ul className="main-items">
           <li>
-            <Anchor href="#about">
+            <Anchor href="/#about">
               Sobre
             </Anchor>
           </li>

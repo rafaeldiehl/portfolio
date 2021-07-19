@@ -8,7 +8,7 @@ export function Footer() {
       <div className="footer-container">
         <div className="flex-container">
           Copyleft <RiCopyleftLine /> Rafael Diehl.
-          <a href="https://github.com/rafaeldiehl" target="_blank">
+          <a href="https://github.com/rafaeldiehl/portfolio" target="_blank">
             Acesse o repositório
           </a>
           com o código fonte.

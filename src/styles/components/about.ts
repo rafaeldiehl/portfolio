@@ -193,4 +193,16 @@ export const Container = styled.section`
       }
     }
   }
+
+  @media (max-height: 575px) {
+    .node {
+      .circle {
+        &.first-circle {
+          &::after {
+            height: 11rem;
+          }
+        }
+      }
+    }
+  }
 `;
