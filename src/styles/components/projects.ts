@@ -82,6 +82,8 @@ export const Container = styled.section`
       width: 100%;
       height: 7rem;
 
+      color: ${props => props.theme.colors.textPrimary};
+
       display: flex;
       justify-content: center;
       align-items: center;

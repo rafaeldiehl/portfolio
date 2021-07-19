@@ -1,6 +1,6 @@
 import { BiLink } from 'react-icons/bi';
 
-import { Anchor } from '../components/Anchor';
+import { Link } from 'react-router-dom';
 
 import { Container } from '../styles/components/projects';
 
@@ -23,30 +23,30 @@ export function Projects() {
           </p>
         </div>
         <div className="projects-container">
-          <Anchor className="project-1">
+          <Link to="/test" className="project-1">
             <img src={nautilusLogo} alt="Nautilus Calculus" />
             <BiLink />
-          </Anchor>
-          <Anchor className="project-2">
+          </Link>
+          <Link to="/test" className="project-2">
             <img src={happyLogo} alt="Happy" />
             <BiLink />
-          </Anchor>
-          <Anchor className="project-3">
+          </Link>
+          <Link to="/test" className="project-3">
             <img src={proffyLogo} alt="Proffy" />
             <BiLink />
-          </Anchor>
-          <Anchor className="project-4">
+          </Link>
+          <Link to="/test" className="project-4">
             <img src={easybankLogo} alt="Easybank" />
             <BiLink />
-          </Anchor>
-          <Anchor className="project-5">
+          </Link>
+          <Link to="/test" className="project-5">
             <img src={podcastrLogo} alt="Podcastr" />
             <BiLink />
-          </Anchor>
-          <Anchor className="project-6">
+          </Link>
+          <Link to="/test" className="project-6">
             <img src={moveitLogo} alt="Move.it" />
             <BiLink />
-          </Anchor>
+          </Link>
         </div>
       </div>
     </Container>
