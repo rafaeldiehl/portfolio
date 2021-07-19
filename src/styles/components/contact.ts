@@ -234,6 +234,33 @@ export const Container = styled.section`
     }
   }
 
+  .send-email-alert {
+    width: 18rem;
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-50%);
+    background: ${props => props.theme.colors.backgroundPrimary};
+    border: 2px solid ${props => props.theme.colors.backgroundSecondary};
+    border-radius: 6px;
+    padding: 1rem;
+
+    button {
+      border: none;
+      background: none;
+      font-size: 0.9rem;
+      display: flex; 
+      justify-content: center;
+      align-items: center;
+      margin-left: 0.5rem;
+      color: ${props => props.theme.colors.textPrimary}cc;
+    }
+  }
+
   @media (max-width: 1050px) {
     .contact-badges {
       flex-wrap: wrap;

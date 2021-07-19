@@ -129,11 +129,11 @@ export const Container = styled.section`
       }
     }
 
-    .project-2, .project-4 {
+    .project-3, .project-4 {
       background: ${props => props.theme.colors.backgroundSecondary}99;
     }
 
-    .project-3, .project-5 {
+    .project-2, .project-5 {
       background: ${props => props.theme.colors.backgroundSecondary}66;
     }
 

@@ -1,12 +1,27 @@
+import { useState } from 'react';
+
 import { Anchor } from '../components/Anchor';
 
+import InputMask from 'react-input-mask';
+
 import { FaTrashAlt, FaArrowRight } from 'react-icons/fa';
+import { MdClose } from 'react-icons/md';
 
 import { Container } from '../styles/components/contact';
 
 import emailjs from 'emailjs-com';
 
 export function Contact() {
+  const [isSend, setIsSend] = useState(false);
+
+  function openIsSend() {
+    setIsSend(true);
+  }
+
+  function closeIsSend() {
+    setIsSend(false);
+  }
+
   function sendEmail(e: any) {
     e.preventDefault();
 
@@ -17,6 +32,8 @@ export function Contact() {
           console.log(error.text);
       });
       e.target.reset();
+
+    openIsSend();
   }
 
   return (
@@ -46,7 +63,7 @@ export function Contact() {
             <label htmlFor="email">E-mail</label>
           </div>
           <div className="field-container">
-            <input id="phone" type="number" name="phone" required />
+            <InputMask mask="+5\5 (99) 99999-9999" required />
             <label htmlFor="phone">Telefone</label>
           </div>
           <div className="field-container">
@@ -68,6 +85,17 @@ export function Contact() {
             </button>
           </div>
         </form>
+        {
+          isSend && (
+            <div className="send-email-alert">
+              E-mail enviado com sucesso!
+              <button onClick={closeIsSend}>
+                <MdClose />
+              </button>
+            </div>
+          )
+        }
+
       </div>
     </Container>
   );
