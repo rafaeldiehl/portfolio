@@ -165,4 +165,12 @@ export const Container = styled.section`
       }
     }
   }
+
+   @media (max-width: 560px) {
+    .carousel {
+      .left, .right {
+        display: none;
+      }
+    }
+  }
 `;

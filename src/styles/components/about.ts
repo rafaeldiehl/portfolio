@@ -182,24 +182,25 @@ export const Container = styled.section`
     }
   }
 
-  @media (max-width: 328px) {
+  @media (max-width: 385px) {
     .node {
       .circle {
         &.first-circle {
           &::after {
-            height: 13.4rem;
+            height: 11.8rem;
           }
         }
       }
     }
   }
 
-  @media (max-height: 575px) {
+
+  @media (max-width: 295px) {
     .node {
       .circle {
         &.first-circle {
           &::after {
-            height: 11rem;
+            height: 13rem;
           }
         }
       }

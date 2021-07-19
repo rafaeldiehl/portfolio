@@ -13,7 +13,7 @@ import podcastrLogo from "../assets/images/podcastr_logo.png";
 
 export function Projects() {
   return (
-    <Container>
+    <Container id="projects">
       <div className="flex-container">
         <div className="descriptive">
         <span>Projetos</span>
