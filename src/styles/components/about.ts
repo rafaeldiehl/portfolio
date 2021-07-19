@@ -89,7 +89,7 @@ export const Container = styled.section`
       &.first-circle {
         &::after {
           content: '';
-          height: 11rem;
+          height: 10.9rem;
           width: 3px;
           background: var(--red);
           position: absolute;

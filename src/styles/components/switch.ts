@@ -3,8 +3,8 @@ import styled from 'styled-components';
 export const Container = styled.label`
   position: relative;
   display: inline-block;
-  width: 3.25rem;
-  height: 1.475rem;
+  width: 50px;
+  height: 24px;
 
   input { 
     opacity: 0;
@@ -26,8 +26,8 @@ export const Container = styled.label`
     &:before {
       position: absolute;
       content: "";
-      height: 1rem;
-      width: 1rem;
+      height: 16px;
+      width: 16px;
       border-radius: 50%;
       left: 5px;
       bottom: 4px;

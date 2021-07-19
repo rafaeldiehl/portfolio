@@ -67,7 +67,7 @@ export default createGlobalStyle`
   // breakpoints
   @media(max-width: 1500px) {
     html {
-      font-size: 95%;
+      font-size: 100%;
     }
   }
 
