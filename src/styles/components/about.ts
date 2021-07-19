@@ -53,6 +53,10 @@ export const Container = styled.section`
     p {
       line-height: 1.75rem;
       font-size: 1.15rem;
+
+      &:last-child {
+        margin-top: 1rem;
+      }
     }
   }
 

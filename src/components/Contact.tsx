@@ -1,12 +1,6 @@
-import { Anchor } from './Anchor';
+import { Anchor } from '../components/Anchor';
 
 import { FaTrashAlt, FaArrowRight } from 'react-icons/fa';
-
-import { 
-  FiMail,
-  FiGithub,
-  FiLinkedin
-} from 'react-icons/fi';
 
 import { Container } from '../styles/components/contact';
 
@@ -31,28 +25,15 @@ export function Contact() {
         <span>Contato</span>
         <h2>Envie sua mensagem</h2>
         <p>Preencha o formulário a seguir adequadamente e envie-me um e-mail com seus dados
-         e mensagem. Responderei assim que possível. Além disso, você pode entrar em contato
-         comigo pelos seguintes meios:</p>
-        <div className="contact-badges">
-          <Anchor href="mailto:rafaeljuliani1984@gmail.com" target="_blank">
-            <div className="badge">
-              <FiMail />
-              E-mail
-            </div>
-          </Anchor>
-          <Anchor href="https://github.com/rafaeldiehl" target="_blank">
-            <div className="badge">
-              <FiGithub />
-              Github
-            </div>
-          </Anchor>
-          <Anchor href="https://www.linkedin.com/in/rafael-juliani-diehl-94317a198/" target="_blank">
-            <div className="badge">
-              <FiLinkedin />
+         e mensagem. Estou aberto para freelances, de pequeno e médio porte, e responderei assim que possível.</p>
+        <p>Você também pode visitar meus perfis no <Anchor href="https://www.linkedin.com/in/rafael-juliani-diehl-94317a198/" target="_blank">
               Linkedin
-            </div>
-          </Anchor>
-        </div>
+          </Anchor> e <Anchor href="https://github.com/rafaeldiehl" target="_blank">
+              Github
+          </Anchor>, ou enviar um e-mail diretamente em <Anchor href="mailto:rafaeljuliani1984@gmail.com" target="_blank">
+              rafaeljuliani1984@gmail.com
+          </Anchor>.
+        </p>
       </div>
       <div className="contact-container">
         <form onSubmit={sendEmail}>

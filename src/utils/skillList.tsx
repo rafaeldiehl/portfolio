@@ -6,6 +6,8 @@ import {
   SiTypescript,
   SiNodeDotJs,
   SiPhp,
+  SiNextDotJs,
+  SiStyledComponents
 } from 'react-icons/si';
 
 import { GrMysql } from 'react-icons/gr';
@@ -54,6 +56,11 @@ export const skills = [
     title: 'PHP',
     component: <SiPhp />,
     color: '#1C87E5'
+  },
+  {
+    title: 'Next.js',
+    component: <SiNextDotJs />,
+    color: '#0A0A0A'
   },
   {
     title: 'Git',

@@ -11,6 +11,7 @@ export function About() {
             foi no ensino médio. Apesar de ter gostado de programação no geral, meu entusiasmo de fato
             surgiu com o desenvolvimento web. Desde então, tenho me dedicado aos estudos de forma autodidata.
           </p>
+          <p>Pretendo aceitar novos desafios, onde possa colocar meus conhecimentos em prática e aprender cada vez mais sobre esse vasto mundo que a programação tem a oferecer.</p>
         </section>
         <section className="trajectory">
           <h3>Trajetória acadêmica</h3>

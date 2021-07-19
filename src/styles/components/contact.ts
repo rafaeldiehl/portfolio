@@ -97,6 +97,16 @@ export const Container = styled.section`
     p {
       line-height: 1.75rem;
       font-size: 1.15rem;
+
+      &:last-child {
+        margin-top: 1rem;
+
+        a {
+          display: inline;
+          color: #ED3F3E;
+          text-decoration: underline;
+        }
+      }
     }
   }
 
@@ -105,49 +115,6 @@ export const Container = styled.section`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-
-  .contact-badges {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2rem;
-
-    a {
-      width: 100%;
-      max-width: 150px;
-    }
-
-    .badge {
-      padding: 1rem;
-      margin: 0.25rem;
-      
-      border: 2px solid ${props => props.theme.colors.textSecondary};
-      border-radius: 6px;
-      color: ${props => props.theme.colors.textSecondary};
-      font-size: 1.2rem;
-
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-
-      opacity: 0.8;
-
-      transition: border-radius .5s;
-
-      svg {
-        font-size: 1.4rem;
-        margin-right: 1rem;
-      }
-
-      &:hover {
-        opacity: 1;
-        animation: ${changeBorderColor} infinite 2s, ${changeColor} infinite 2s;
-        border-radius: 0;
-      }
-    }
   }
 
   form {
