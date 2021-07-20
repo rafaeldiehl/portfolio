@@ -12,7 +12,6 @@ export const Container = styled.div`
   }
 
   .image-container {
-    background: red;
     background-size: cover;
     background-position: center;
   }
@@ -81,6 +80,23 @@ export const Container = styled.div`
       &:hover {
         filter: brightness(150%);
         border-radius: 0;
+      }
+    }
+  }
+
+  @media (max-width: 950px) {
+    flex-direction: column;
+    height: auto;
+
+    > div {
+      width: 100%;
+      
+      &:first-child {
+        height: 100vh;
+      }
+
+      &:last-child {
+        display: none;
       }
     }
   }
