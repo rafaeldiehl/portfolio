@@ -4,7 +4,12 @@ import { ThemeProvider, DefaultTheme } from 'styled-components';
 import { usePersistedState } from './hooks/usePersistedState';
 
 import { Home } from './pages/Home';
-import { Test } from './pages/Test';
+import { Nautilus } from './pages/Nautilus';
+import { Happy } from './pages/Happy';
+import { Proffy } from './pages/Proffy';
+import { Podcastr } from './pages/Podcastr';
+import { Moveit } from './pages/Moveit';
+import { Easybank } from './pages/Easybank';
 
 import light from './styles/themes/light';
 import dark from './styles/themes/dark';
@@ -28,8 +33,52 @@ export function Routes() {
           )}
         />
         <Route
-          exact path="/test"
-          component={Test}
+          exact path="/nautilus-calculus"
+          render={() => (
+            <Nautilus
+              handleTheme={handleTheme} 
+            />
+          )}
+        />
+        <Route
+          exact path="/happy"
+          render={() => (
+            <Happy
+              handleTheme={handleTheme} 
+            />
+          )}
+        />
+        <Route
+          exact path="/proffy"
+          render={() => (
+            <Proffy
+              handleTheme={handleTheme} 
+            />
+          )}
+        />
+        <Route
+          exact path="/podcastr"
+          render={() => (
+            <Podcastr
+              handleTheme={handleTheme} 
+            />
+          )}
+        />
+        <Route
+          exact path="/move-it"
+          render={() => (
+            <Moveit
+              handleTheme={handleTheme} 
+            />
+          )}
+        />
+        <Route
+          exact path="/easybank"
+          render={() => (
+            <Easybank
+              handleTheme={handleTheme} 
+            />
+          )}
         />
       </ThemeProvider>
     </Router>

@@ -23,27 +23,27 @@ export function Projects() {
           </p>
         </div>
         <div className="projects-container">
-          <Link to="/test" className="project-1">
+          <Link to="/nautilus-calculus" className="project-1">
             <img src={nautilusLogo} alt="Nautilus Calculus" />
             <BiLink />
           </Link>
-          <Link to="/test" className="project-2">
+          <Link to="/happy" className="project-2">
             <img src={happyLogo} alt="Happy" />
             <BiLink />
           </Link>
-          <Link to="/test" className="project-3">
+          <Link to="/proffy" className="project-3">
             <img src={proffyLogo} alt="Proffy" />
             <BiLink />
           </Link>
-          <Link to="/test" className="project-4">
+          <Link to="/easybank" className="project-4">
             <img src={easybankLogo} alt="Easybank" />
             <BiLink />
           </Link>
-          <Link to="/test" className="project-5">
+          <Link to="/podcastr" className="project-5">
             <img src={podcastrLogo} alt="Podcastr" />
             <BiLink />
           </Link>
-          <Link to="/test" className="project-6">
+          <Link to="/move-it" className="project-6">
             <img src={moveitLogo} alt="Move.it" />
             <BiLink />
           </Link>

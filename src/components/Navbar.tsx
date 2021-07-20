@@ -56,12 +56,12 @@ export function Navbar(props: NavbarProps) {
             </Anchor>
           </li>
           <li>
-            <Anchor href="#skills">
+            <Anchor href="/#skills">
               Skills
             </Anchor>
           </li>
           <li>
-            <Anchor href="#projects">
+            <Anchor href="/#projects">
               Projetos
             </Anchor>
           </li>
@@ -70,7 +70,7 @@ export function Navbar(props: NavbarProps) {
             onMouseLeave={setIsDropdownFalse}
             className="dropdown-container"
           >
-            <Anchor href="#contact">
+            <Anchor href="/#contact">
               Contato
               {isDropdown ? (
                 <MdKeyboardArrowUp />

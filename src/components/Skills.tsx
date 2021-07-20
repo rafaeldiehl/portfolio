@@ -26,7 +26,7 @@ export function Skills() {
             <p>A seguir está uma lista com as linguagens, ferramentas e outras tecnologias com que mais tive contato.
             </p>
             <p>
-              A ordem da lista não está de acordo com o nível de proficiência nas linguagens.
+              A ordem da lista não está de acordo com o nível de proficiência nas tecnologias.
             </p>
           </section>
           <section className="skill-list">
