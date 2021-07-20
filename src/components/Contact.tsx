@@ -63,7 +63,7 @@ export function Contact() {
             <label htmlFor="email">E-mail</label>
           </div>
           <div className="field-container">
-            <InputMask mask="+5\5 (99) 99999-9999" required />
+            <InputMask type="number" mask="+5\5 (99) 99999-9999" required />
             <label htmlFor="phone">Telefone</label>
           </div>
           <div className="field-container">
