@@ -207,6 +207,10 @@ export const Container = styled.section`
     height: auto;
     margin-bottom: 4rem;
 
+    .descriptive {
+      text-align: center;
+    }
+
     .flex-container {
       flex-direction: column;
 
