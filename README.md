@@ -2,6 +2,8 @@
   
 <p align="center">Portfólio desenvolvido como atividade para a disciplina de Desenvolvimento Web, no curso de tecnologia em Análise e Desenvolvimento de Sistemas.</p>
 
+<p align="center">O site se encontra hospedado em: <a href="https://rafaeldiehl.vercel.app" target="_blank">https://rafaeldiehl.vercel.app</a></p>
+
 <p align="center">
 
   <img src="https://img.shields.io/static/v1?label=portfolio&message=ads&color=E6384D" target="_blank" alt="Portfólio">
@@ -23,13 +25,14 @@
   - [Instalação](#instalacao)
 - [Tecnologias](#tecnologias)
 - [Features](#features)
+- [Licença](#license)
 <!--te-->
 
 <hr>
 
 <div id="local">
   
-  <h2 align="center">🔎 Instalando localmente</h2>
+  <h2 align="center">🔎 Rodando localmente</h2>
   
  <div id="pre-requisitos">
   <h3>Pré-requisitos</h3>
