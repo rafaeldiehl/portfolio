@@ -37,7 +37,7 @@ export function NotFound(props: HomeProps) {
           <p className="description">A página que você solicitou não existe, foi removida ou está temporariamente indisponível.</p>
           <Link to="/">
             <Button>
-              Retornar a página principal
+              Retornar à página principal
             </Button>
           </Link>
         </div>
