@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom';
 
 import { ThemeProvider, DefaultTheme } from 'styled-components';
 import { usePersistedState } from './hooks/usePersistedState';
@@ -10,6 +10,7 @@ import { Proffy } from './pages/Proffy';
 import { Podcastr } from './pages/Podcastr';
 import { Moveit } from './pages/Moveit';
 import { Easybank } from './pages/Easybank';
+import { NotFound } from './pages/NotFound';
 
 import light from './styles/themes/light';
 import dark from './styles/themes/dark';
@@ -76,6 +77,13 @@ export function Routes() {
           exact path="/easybank"
           render={() => (
             <Easybank
+              handleTheme={handleTheme} 
+            />
+          )}
+        />
+        <Route path="*"
+          render={() => (
+            <NotFound
               handleTheme={handleTheme} 
             />
           )}
