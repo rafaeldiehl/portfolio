@@ -3,12 +3,6 @@ import { useState } from 'react';
 import logoIMG from '../assets/images/logo.png';
 
 import { 
-  FiMail,
-  FiGithub,
-  FiLinkedin
-} from 'react-icons/fi';
-
-import { 
   MdKeyboardArrowDown,
   MdKeyboardArrowUp
 } from 'react-icons/md';
@@ -18,6 +12,8 @@ import { Container } from '../styles/components/navbar';
 import { Switch } from './Switch';
 import { Menu } from './Menu';
 import { Anchor } from './Anchor';
+
+import { contactLinks } from '../utils/contactLinks';
 
 interface NavbarProps {
   handleTheme: () => void;
@@ -43,11 +39,13 @@ export function Navbar(props: NavbarProps) {
 
   return (
     <Container>
-      <img 
-        src={logoIMG}
-        alt="Rafael Diehl" 
-        title="Rafael Diehl" 
-      />
+      <Anchor href="/">
+        <img 
+          src={logoIMG}
+          alt="Rafael Diehl" 
+          title="Rafael Diehl" 
+        />
+      </Anchor>
       <div className={`flex-container ${showMenu ? 'active' : ''}`}>
         <ul className="main-items">
           <li>
@@ -79,30 +77,16 @@ export function Navbar(props: NavbarProps) {
               )}
             </Anchor>
             <ul className="dropdown">
-              <li>
-                <Anchor href="mailto:rafaeljuliani1984@gmail.com">
-                  <FiMail />
-                  <span>E-mail</span>
-                </Anchor>
-              </li>
-              <li>
-                <Anchor
-                  href="https://github.com/rafaeldiehl"
-                  target="_blank"
-                >
-                  <FiGithub />
-                  <span>Github</span>
-                </Anchor>
-              </li>
-              <li>
-                <Anchor
-                  href="https://www.linkedin.com/in/rafael-juliani-diehl-94317a198/"
-                  target="_blank"
-                >
-                  <FiLinkedin />
-                  <span>Linkedin</span>
-                </Anchor>
-              </li>
+              { contactLinks.map((contactLink) => {
+                  return (
+                    <li key={contactLink.title}>
+                      <Anchor href={contactLink.link}>
+                        {contactLink.icon}
+                        <span>{contactLink.title}</span>
+                      </Anchor>
+                    </li>
+                  )
+                }) }
             </ul>
           </li>
         </ul>

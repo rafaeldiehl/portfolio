@@ -28,7 +28,7 @@ export function NotFound(props: HomeProps) {
     <Container id="not-found" className={cursor && 'cursorOn'}>
       <div className="block-bg" />
       <GlobalStyle />
-      {/* cursor && <Cursor /> */}
+      { cursor && <Cursor /> }
       <Navbar handleTheme={props.handleTheme} />
       <div className="flex-container">
         <div className="descriptive">

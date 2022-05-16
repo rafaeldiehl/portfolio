@@ -5,7 +5,6 @@ import GlobalStyle from '../styles/global';
 import { useWindowDimensions } from '../hooks/useWindowDimensions';
 
 import { About } from '../components/About';
-import { Contact } from '../components/Contact';
 import { Cursor } from '../components/Cursor';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
@@ -35,7 +34,6 @@ export function Home(props: HomeProps) {
       <About />
       <Skills />
       <Projects />
-      <Contact />
       <Footer />
     </Container>
   );

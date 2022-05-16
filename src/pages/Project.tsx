@@ -11,13 +11,20 @@ import { ProjectPage } from '../components/ProjectPage';
 
 import { Container } from '../styles/pages/home';
 
-import easybank from '../assets/images/easybank.png';
+import nautilusCalculus from '../assets/images/nautiluscalculus.png';
 
 interface HomeProps {
+  data: {
+    title: string;
+    description: string;
+    img: string;
+    techs: Array<string>;
+    link: string;
+  },
   handleTheme: () => void;
 }
 
-export function Easybank(props: HomeProps) {
+export function Project({ data, handleTheme }: HomeProps) {
   const { width } = useWindowDimensions();
   const [cursor, setCursor] = useState<Boolean>(false);
 
@@ -26,17 +33,17 @@ export function Easybank(props: HomeProps) {
   }, [width]);
 
   return (
-    <Container id="easybank" className={cursor && 'cursorOn'}>
+    <Container id={data.title} className={cursor && 'cursorOn'}>
       <div className="block-bg" />
       <GlobalStyle />
       {cursor && <Cursor />}
-      <Navbar handleTheme={props.handleTheme} />
+      <Navbar handleTheme={handleTheme} />
       <ProjectPage
-        title="Easybank"
-        description="Landing page do banco Easybank, desenvolvida como solução de um desafio do Frontend Mentor. "
-        img={easybank}
-        techs={["HTML", "CSS", "JavaScript", "Sass"]}
-        link="https://github.com/rafaeldiehl/easybank-landing-page-master"
+        title={data.title}
+        description={data.description}
+        img={data.img}
+        techs={data.techs}
+        link={data.link}
       />
       <Footer />
     </Container>
